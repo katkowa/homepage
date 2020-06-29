@@ -1,0 +1,45 @@
+.navigation {
+    width: 100%;
+    margin-top: 0px;
+    padding-left: 0;
+    display: flex;
+}
+
+.navigation__item {
+    list-style-type: none;
+    flex-basis: 100%;
+    display: flex;
+    border-left: black 1px solid;
+    background-color: rgb(179, 178, 178);
+}
+
+.navigation__item:first-child {
+    border-left: 0px;
+}
+
+.navigation__link {
+    flex-basis: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation__link:visited {
+    color: inherit;
+}
+
+.navigation__link:focus {
+    background-color: rgb(171, 197, 193);
+}
+
+.navigation__link:hover {
+    background-color: rgb(185, 212, 208);
+}
+
+.navigation__link:active {
+    color: inherit;
+    background-color: rgb(192, 221, 217);
+}

@@ -1,0 +1,31 @@
+.section {
+    width: 80%;
+    margin: auto;
+    color: black;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__header {
+    text-align: center;
+}
+
+.section__header--light {
+    color: #ccc;
+}
+
+.section__content {
+    background-color: #ccc;
+    box-shadow: 0px 0px 10px 0px #707573;
+    border-radius: 2%;
+    padding: 20px;
+}
+
+.section__tableContainer {
+    overflow-x: auto;
+    background-color: #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #707573;
+    border-radius: 2%;
+}

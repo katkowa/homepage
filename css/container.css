@@ -1,0 +1,17 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.contaniner--dark {
+    background-color: #333;
+}
+
+.container__header {
+    margin: 0;
+    padding: 10px;
+    color: rgb(74, 126, 115);
+    background-color: #ccc;
+    text-align: center;
+}

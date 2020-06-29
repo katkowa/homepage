@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasia Kowalska</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/aside.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1 class="container__header">Kasia Kowalska</h1>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li class="navigation__item"><a class="navigation__link" href="#kariera-zawodowa">Kariera</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#o-mnie">O mnie</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#seriale">Seriale</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#interakcje">Interakcje</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="section">
+                <h2 class="section__header js-sectionHeader" id="kariera-zawodowa">Kariera zawodowa</h2>
+                <div class="section__content">
+                    <p>
+                        Cześć! Mam na imię Kasia i jestem z trójmiasta. <br> Studiowałam Geodezję i Kartografię na PG. W
+                        trakcie studiów zaczęłam pracować ze skanerami laserowymi oraz optycznymi i na tamten moment
+                        wydawało mi się to mega ciekawe. Wciąż uważam że sama tematyka skanowania
+                        i modelowania 3D, a&nbsp;przede wszystkim możliwości ich zastosowania są fascynujące. Jednak
+                        sama praca okazała się nudna i&nbsp;powtarzalna.
+                        <b>A ja nie lubię się nudzić.</b>
+                    </p>
+                    <p>
+                        Tak więc postanowiłam zmienić coś w swoim życiu i trafiłam na bootcamp Javy. Po pół roku nauki
+                        znalazłam swoją pierwszą pracę jako programistka i <em>wkroczyłam do świata IT</em>. Od kwietnia
+                        zeszłego roku zajmuję się pisaniem aplikacji
+                        wspomagającej dowodzenie okrętów wojennych. Brzmi dumnie.
+                    </p>
+                    <p>
+                        Gdy pisałam mój projekt końcowy na zakończenie kursu Javy bardzo mi przeszkadzało, że nie umiem
+                        zrobić do niego porządnej warstwy prezentacyjnej i wtedy po raz pierwszy pojawiła się u mnie
+                        myśl <i>"naucz się Reacta"</i>. Przez natłok innych spraw nie zrobiłam jednak nic w tym
+                        kierunku.
+                    </p>
+                    <p>
+                        A teraz jestem tu. Myślę, że <strong>youcode</strong> to dobre miejsce, żeby coś w tym temacie
+                        podziałać. Póki co nie przewiduję zmiany specjalizacji na frontend po zakończeniu kursu i
+                        bardziej
+                        robię to dla własnej satysfakcji, ale
+                        kto wie? Może się okaże że JS to moja życiowa pasja i nic nie daje mi więcej radości niż
+                        dobieranie
+                        kolorków w CSSie.
+
+                    </p>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__header js-sectionHeader" id="o-mnie">O mnie</h2>
+                <div class="section__content">
+                    Uwielbiam góry, wodospady i jaskinie. Kocham salsę i bachatę. Przez kwarantannę przypomniałam sobie,
+                    że
+                    uwielbiam też rower. Lubię grać w planszówki. Oglądam dramy koreańskie. Marzy mi się pies rasy
+                    Samojed.
+                    I&nbsp;uważam, że nie ma na świecie nic wspanialszego
+                    niż połączenie masła orzechowego, białej czekolady i malin.
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__header js-sectionHeader" id="seriale">Seriale</h2>
+                <div class="section__tableContainer">
+                    <table class="table">
+                        <caption class="table__caption">Lista seriali obejrzanych w czasie kwarantanny, czyli co robi
+                            Kasia po
+                            pracy zamiast uczyć się programowania</caption>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="col">Tytuł</th>
+                            <th class="table__cell table__cell--header" scope="col">Gatunek</th>
+                            <th class="table__cell table__cell--header" scope="col">Kraj produkcji</th>
+                            <th class="table__cell table__cell--header" scope="col">Zaznacz czy ukończony</th>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">La Casa De Papel</th>
+                            <td class="table__cell">Thriller, Akcja</td>
+                            <td class="table__cell">Hiszpania</td>
+                            <td class="table__cell table__cell--doneChecker js-doneChecker">✔</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Wiedźmin</th>
+                            <td class="table__cell">Fantasy, Przygodowy</td>
+                            <td class="table__cell">Polska, USA</td>
+                            <td class="table__cell table__cell--doneChecker js-doneChecker">✔</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Crash Landing on You</th>
+                            <td class="table__cell">Komediodramat</td>
+                            <td class="table__cell">Korea Płd.</td>
+                            <td class="table__cell table__cell--doneChecker js-doneChecker">✔</td>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Doctor John</th>
+                            <td class="table__cell">Medyczny</td>
+                            <td class="table__cell">Korea Płd.</td>
+                            <td class="table__cell table__cell--doneChecker js-doneChecker">✔</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Guardian: The Lonely and Great God</th>
+                            <td class="table__cell">Fantasy, Romans, Dramat</td>
+                            <td class="table__cell">Korea Płd.</td>
+                            <td class="table__cell table__cell--doneChecker js-doneChecker">✔</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Something About 1 Percent</th>
+                            <td class="table__cell">Komediodramat</td>
+                            <td class="table__cell">Korea Płd.</td>
+                            <td class="table__cell table__cell--doneChecker js-doneChecker">✔</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Suits</th>
+                            <td class="table__cell">Dramat, Prawniczy</td>
+                            <td class="table__cell">USA</td>
+                            <td class="table__cell table__cell--doneChecker js-doneChecker">✖</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <aside class="aside">
+            <h2 class="aside__header js-sectionHeader" id="interakcje">Interakcje</h2>
+            <button class="aside__button js-themeChanger">Zmień tło</button>
+            <button class="aside__button js-dogFeeder">Nakarm piesełka</button>
+            <img class="aside__image" src="https://cdn.pixabay.com/photo/2017/02/17/09/20/samoyed-2073662_960_720.jpg"
+                alt="Samojed">
+            <img class="aside__image aside__image--hidden js-bone"
+                src="https://cdn.pixabay.com/photo/2013/07/13/10/27/bone-157272_960_720.png" alt="kość">
+        </aside>
+
+        <footer class="footer">
+            <a class="footer__email" href="mailto:kasia.kow94@gmail.com">Napisz do mnie!</a>
+        </footer>
+    </div>
+</body>
+
+</html>
