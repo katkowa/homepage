@@ -1,30 +1,47 @@
-console.log("Hello from the other side!");
+{
+    console.log("Hello from the other side!");
 
-let themeChanger = document.querySelector(".js-themeChanger");
-let container = document.querySelector(".container");
-let sectionHeaders = document.querySelectorAll(".js-sectionHeader");
-let dogFeeder = document.querySelector(".js-dogFeeder");
-let bone = document.querySelector(".js-bone");
-let doneCheckers = document.querySelectorAll(".js-doneChecker");
+    let themeChanger = document.querySelector(".js-themeChanger");
+    let container = document.querySelector(".container");
+    let sectionHeaders = document.querySelectorAll(".js-sectionHeader");
+    let dogFeeder = document.querySelector(".js-dogFeeder");
+    let bone = document.querySelector(".js-bone");
+    let doneCheckers = document.querySelectorAll(".js-doneChecker");
+    init();
 
-themeChanger.addEventListener("click", () => {
-    container.classList.toggle("contaniner--dark");
-    sectionHeaders.forEach(header => {
-        header.classList.toggle("section__header--light");
-    })
-});
+    function init() {
+        themeChanger.addEventListener("click", () => {
+            changeTheme();
+        });
 
-dogFeeder.addEventListener("click", () => {
-    bone.classList.toggle("aside__image--hidden");
-    if (dogFeeder.innerText === "Nakarm piesełka") {
-        dogFeeder.innerText = "Omnomnomnom";
-    } else {
-        dogFeeder.innerText = "Nakarm piesełka";
+        dogFeeder.addEventListener("click", () => {
+            feedDog();
+        });
+
+        doneCheckers.forEach(checker => {
+            checker.addEventListener("click", () => {
+                switchDoneChecker(checker);
+            });
+        });
     }
-});
 
-doneCheckers.forEach(checker => {
-    checker.addEventListener("click", () => {
+    function changeTheme() {
+        container.classList.toggle("contaniner--dark");
+        sectionHeaders.forEach(header => {
+            header.classList.toggle("section__header--light");
+        });
+    }
+
+    function feedDog() {
+        bone.classList.toggle("aside__image--hidden");
+        if (dogFeeder.innerText === "Nakarm piesełka") {
+            dogFeeder.innerText = "Omnomnomnom";
+        } else {
+            dogFeeder.innerText = "Nakarm piesełka";
+        }
+    }
+
+    function switchDoneChecker(checker) {
         switch (checker.innerText) {
             case ("✖"):
                 checker.innerText = "✔";
@@ -32,5 +49,5 @@ doneCheckers.forEach(checker => {
             case ("✔"):
                 checker.innerText = "✖";
         }
-    })
-});
+    }
+}
